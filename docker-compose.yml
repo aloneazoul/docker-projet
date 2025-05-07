@@ -1,0 +1,25 @@
+services:
+  web1:
+    build:
+      context: ../
+      dockerfile: docker/web1/Dockerfile
+    ports:
+      - "3001:80"
+    environment:
+      - VIRTUAL_HOST=web1.local
+
+  web2:
+    build:
+      context: ../
+      dockerfile: docker/web2/Dockerfile
+    ports:
+      - "3002:80"
+    environment:
+      - VIRTUAL_HOST=web2.local
+
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    ports:
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
