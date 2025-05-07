@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Site Moderne</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #0077ff;
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(135deg, #0077ff, #00c3ff);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: white;
+      color: #0077ff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .about, .services {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .services .cards {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #f9f9f9;
+      padding: 20px;
+      width: 250px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MonLogo</div>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bienvenue sur mon site</h1>
+    <p>Un design moderne, épuré et responsive.</p>
+    <a href="#about" class="btn">En savoir plus</a>
+  </section>
+
+  <section id="about" class="about">
+    <h2>À propos</h2>
+    <p>Voici un exemple de site moderne, parfait pour débuter un projet web.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Nos services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Design</h3>
+        <p>Des interfaces élégantes et intuitives.</p>
+      </div>
+      <div class="card">
+        <h3>Développement</h3>
+        <p>Du code propre et maintenable.</p>
+      </div>
+      <div class="card">
+        <h3>SEO</h3>
+        <p>Optimisation pour les moteurs de recherche.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 MonSite. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
